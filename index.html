@@ -4,6 +4,65 @@
     <meta charset="UTF-8>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack Annas | Portfolio</title>
+     <style>
+    /* Basic styles — change these colours to customise the site */
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0d1420;
+      color: #edf3ff;
+      line-height: 1.6;
+    }
+    a { color: #55a7ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(980px, 90%); margin: auto; }
+    header { background: #111c2c; border-bottom: 1px solid #26364b; }
+    nav {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo { color: #fff; font-size: 1.2rem; font-weight: bold; }
+    .logo span { color: #55a7ff; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 22px; font-size: .92rem; }
+    .nav-links a { color: #d3deed; }
+    .hero { padding: 66px 0 58px; border-bottom: 1px solid #26364b; }
+    .hero-inner { display: flex; align-items: center; justify-content: space-between; gap: 35px; }
+    .eyebrow { color: #9eb1ca; margin: 0 0 5px; }
+    h1 { font-size: clamp(2.5rem, 6vw, 3.5rem); line-height: 1.1; margin: 0 0 8px; }
+    h1 span { color: #55a7ff; }
+    .subtitle { font-size: 1.05rem; font-weight: bold; margin: 0 0 14px; }
+    .intro { color: #b9c8dc; max-width: 550px; margin: 0 0 22px; }
+    .hero-icon { font-size: 6rem; color: #55a7ff; padding: 20px; line-height: 1; }
+    .button { display: inline-block; padding: 10px 16px; border: 1px solid #55a7ff; border-radius: 6px; margin: 0 8px 6px 0; }
+    .button.primary { background: #2388f5; color: #fff; }
+    section { padding: 32px 0; border-bottom: 1px solid #26364b; }
+    h2 { margin: 0 0 18px; font-size: 1.55rem; }
+    h2::after { content: ""; display: block; width: 36px; height: 3px; background: #55a7ff; margin-top: 7px; }
+    .about-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 45px; }
+    .muted { color: #b9c8dc; }
+    .details p { margin: 0 0 15px; }
+    .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .project { background: #111c2c; border: 1px solid #293b53; border-radius: 8px; padding: 20px; }
+    .project h3 { margin: 0 0 6px; }
+    .project p { margin: 0 0 12px; color: #b9c8dc; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill { border: 1px solid #344962; border-radius: 7px; padding: 7px 13px; color: #d3deed; background: #111c2c; font-size: .92rem; }
+    footer { padding: 22px 0; color: #9eb1ca; font-size: .88rem; }
+    footer .container { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    @media (max-width: 650px) {
+      nav { align-items: flex-start; flex-direction: column; padding: 16px 0; }
+      .nav-links { gap: 13px; }
+      .hero { padding: 45px 0; }
+      .hero-inner { display: block; }
+      .hero-icon { display: none; }
+      .about-grid, .project-grid { grid-template-columns: 1fr; gap: 18px; }
+    }
+  </style>
   </head>
   <body>
     <header>
